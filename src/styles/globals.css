@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+	--color-brand-primary: #0047ab;
+	--color-brand-primary-hover: #1274ff;
+	--color-brand-secondary: #4592ff;
+	--color-light: #f8f9fa;
+	--color-dark: #282c31;
+	--color-deep-dark: #000712;
+
+	--font-sans: 'Inter', sans-serif;
+	--font-serif: 'Source Serif 4', serif;
+}
+
+button {
+	@apply cursor-pointer;
+}
