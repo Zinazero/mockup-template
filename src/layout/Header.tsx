@@ -1,44 +1,48 @@
 import Image from 'next/image';
-import ScrollPaddingSetter from './ScrollPaddingSetter';
+import Link from 'next/link';
+import { NavLink } from '../components/NavLink';
 import { ThemeToggle } from '../components/ThemeToggle';
+import brandData from '../data/brand.json';
+import navData from '../data/nav.json';
 import { cn } from '../utils/cn';
+import ScrollPaddingSetter from './ScrollPaddingSetter';
 
-export default function Header() {
+type NavLinkType = {
+  text: string;
+  href: string;
+};
+
+export const Header = () => {
+  const navLinks: NavLinkType[] = navData;
+
   return (
     <header
       className={cn(
         'sticky top-0 z-50 w-full shadow-lg h-24',
         'bg-light dark:bg-deep-dark text-dark dark:text-light',
-        'dark:bg-deep-dark dark:text-light dark:border-b dark:border-brand'
+        'dark:bg-deep-dark dark:text-light dark:border-b dark:border-brand',
       )}
     >
       <div id="header-div" className="px-4 flex items-center justify-between w-full h-full relative">
         {/* Logo */}
-        <a href="#hero" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <figure className="relative h-8 md:h-11 lg:h-15 w-8 md:w-11 lg:w-15">
             <Image src="logo.svg" alt="Logo" fill className="cursor-pointer" draggable={false} />
           </figure>
-          <span className="font-bold hidden lg:block">Cobalt Software Solutions</span>
-        </a>
+          <span className="font-bold hidden lg:block">{brandData.name}</span>
+        </Link>
 
         {/* Navigation */}
         <nav
           className={cn(
-            'hidden absolute left-1/2 -translate-x-1/2 xl:flex space-x-20 text-xl xl:text-2xl font-medium'
+            'hidden absolute left-1/2 -translate-x-1/2 xl:flex space-x-20 text-xl xl:text-2xl font-medium',
           )}
         >
-          <a href="#cobalt-axis" className="hover:text-cobalt-hover transition">
-            Products
-          </a>
-          <a href="#consulting" className="hover:text-cobalt-hover transition">
-            Services
-          </a>
-          <a href="#testimonials" className="hover:text-cobalt-hover transition">
-            Testimonials
-          </a>
-          <a href="#contact" className="hover:text-cobalt-hover transition">
-            Contact
-          </a>
+          {navLinks.map((link) => (
+            <NavLink key={link.text} href={link.href}>
+              <span className="hover:text-brand">{link.text}</span>
+            </NavLink>
+          ))}
         </nav>
 
         {/* Interactive part */}
@@ -49,4 +53,4 @@ export default function Header() {
       <ScrollPaddingSetter />
     </header>
   );
-}
+};

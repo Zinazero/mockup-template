@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
-import { SetTheme } from './scripts/setTheme';
-import Footer from '../layout/Footer';
-import Header from '../layout/Header';
 import { Inter, Source_Serif_4 } from 'next/font/google';
+import { Footer } from '../layout/Footer';
+import { Header } from '../layout/Header';
+import { SetTheme } from './scripts/setTheme';
 
 const sans = Inter({
   subsets: ['latin'],

@@ -1,6 +1,6 @@
 import { cn } from '../utils/cn';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer
       className={cn(
@@ -13,5 +13,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
