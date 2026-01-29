@@ -3,8 +3,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-	--color-brand-primary: #0047ab;
-	--color-brand-primary-hover: #1274ff;
+	--color-brand: #0047ab;
+	--color-brand-hover: #1274ff;
+	--color-brand-light: #1964bd;
+	--color-brand-dark: #060761;
 	--color-brand-secondary: #4592ff;
 	--color-light: #f8f9fa;
 	--color-dark: #282c31;
@@ -14,6 +16,25 @@
 	--font-serif: 'Source Serif 4', serif;
 }
 
+html {
+	scroll-behavior: smooth;
+	user-select: text;
+}
+
+img {
+	user-select: none;
+}
+
+body {
+	@apply transition-colors;
+	@apply font-sans;
+}
+
 button {
 	@apply cursor-pointer;
+}
+
+
+p {
+	@apply font-serif;
 }

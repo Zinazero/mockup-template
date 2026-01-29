@@ -36,7 +36,7 @@ export const ThemeToggle = ({ className }: ThemeToggleProps) => {
       type="button"
       onClick={toggleDark}
       className={cn(
-        'text-2xl text-gray-500/50 hover:text-brand-primary active:scale-95 transition',
+        'text-2xl text-gray-500/50 dark:text-light/70 hover:text-brand dark:hover:text-brand-light active:scale-95 transition',
         className,
       )}
     >
