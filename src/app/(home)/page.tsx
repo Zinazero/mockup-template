@@ -1,14 +1,16 @@
 import { cn } from '../../utils/cn';
+import { Hero } from './sections/Hero';
+import { Section1 } from './sections/Section1';
+import { Section2 } from './sections/Section2';
 
 export default function Home() {
   return (
-    <div className={cn('flex min-h-screen items-center justify-center bg-white font-sans dark:bg-deep-dark')}>
-      <main
-        className={cn(
-          'flex min-h-screen w-full max-w-3xl flex-col items-center justify-between',
-          'py-32 px-16 bg-white dark:bg-deep-dark sm:items-start',
-        )}
-      ></main>
-    </div>
+    <main className={cn('min-h-screen  flex flex-col items-center', 'bg-white dark:bg-deep-dark')}>
+      <Hero />
+
+      <Section1 />
+
+      <Section2 />
+    </main>
   );
 }

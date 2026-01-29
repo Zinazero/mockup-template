@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { NavLink } from '../components/NavLink';
-import { ThemeToggle } from '../components/ThemeToggle';
 import brandData from '../data/brand.json';
 import navData from '../data/nav.json';
 import { cn } from '../utils/cn';
 import ScrollPaddingSetter from './ScrollPaddingSetter';
+import ctaData from '../data/cta.json';
 
 type NavLinkType = {
   text: string;
@@ -45,10 +45,16 @@ export const Header = () => {
           ))}
         </nav>
 
-        {/* Interactive part */}
-        <div>
-          <ThemeToggle className="" />
-        </div>
+        {/* Call to action */}
+        <button
+          type="button"
+          className={cn(
+            'mt-4 rounded-lg p-4 bg-brand text-light font-semibold w-60 text-center',
+            'hover:bg-brand-orange transition text-xl',
+          )}
+        >
+          {ctaData.text}
+        </button>
       </div>
       <ScrollPaddingSetter />
     </header>

@@ -1,20 +1,28 @@
+'use client';
+
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { cn } from '../utils/cn';
 
 type CallToAction = {
   text: string;
-  onClick: () => void;
+  href: string;
 };
 
 type HeroVisualProps = {
   src: string;
-  type: 'image' | 'video';
   poster?: string;
   title: string;
   subtitle?: string;
-  cta: CallToAction;
+  cta?: CallToAction;
 };
 
-export const HeroVisual = ({ src, type, poster, title, subtitle, cta }: HeroVisualProps) => {
+export const HeroVisual = ({ src, poster, title, subtitle, cta }: HeroVisualProps) => {
+  const ext = src.split('.').pop()?.toLowerCase();
+  const type = ext === 'mp4' || ext === 'webm' ? 'video' : 'image';
+
+  const router = useRouter();
+
   return (
     <section className="relative w-full h-full overflow-hidden">
       {/* Background Video / Image */}
@@ -40,17 +48,20 @@ export const HeroVisual = ({ src, type, poster, title, subtitle, cta }: HeroVisu
       )}
 
       {/* Dark overlay for contrast */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black/70" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 text-white">
-        <h1 className="text-5xl font-bold text-brand-orange">{title}</h1>
-        {subtitle && <h2 className="mt-2 text-2xl text-gray-300">{subtitle}</h2>}
+        <h1 className="text-5xl font-bold text-brand-secondary">{title}</h1>
+        {subtitle && <h2 className="mt-2 text-2xl text-light">{subtitle}</h2>}
         {cta && (
           <button
             type="button"
-            onClick={cta.onClick}
-            className="mt-4 rounded-lg p-2 bg-brand-blue text-light font-semibold w-60 text-center hover:bg-brand-orange transition"
+            onClick={() => router.push(cta.href)}
+            className={cn(
+              'mt-4 rounded-lg p-2 bg-brand-light text-light font-semibold w-60 text-center',
+              'hover:bg-brand-orange transition',
+            )}
           >
             {cta.text}
           </button>
