@@ -49,7 +49,7 @@ export const Section2 = () => {
               <div
                 className={cn(
                   'flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 bottom-1/20',
-                  'bg-light h-1/6 w-4/5 p-4 font-bold rounded-xl',
+                  'bg-light h-1/6 w-4/5 p-4 font-bold rounded-xl text-dark',
                 )}
               >
                 <span className="text-xl">{text}</span>
