@@ -26,8 +26,15 @@ export const Header = () => {
       <div id="header-div" className="px-4 flex items-center justify-between w-full h-full relative">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <figure className="relative h-8 md:h-11 lg:h-15 w-8 md:w-11 lg:w-15">
-            <Image src="logo.svg" alt="Logo" fill className="cursor-pointer" draggable={false} />
+          <figure className="max-w-50 bg-dark">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={600}
+              height={262}
+              className="cursor-pointer"
+              draggable={false}
+            />
           </figure>
           <span className="font-bold hidden lg:block">{brandData.name}</span>
         </Link>
