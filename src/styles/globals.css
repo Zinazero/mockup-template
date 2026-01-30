@@ -23,6 +23,7 @@ html {
 
 img {
 	user-select: none;
+	overflow-clip-margin: unset;
 }
 
 body {

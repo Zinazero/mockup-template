@@ -1,12 +1,19 @@
 import type { FC, JSX } from 'react';
+import { cn } from '../utils/cn';
 
 interface UnderlineHeaderProps {
   text: string;
   level: 1 | 2 | 3 | 4 | 5 | 6;
   fontColorClass?: string;
+  svgClass?: string;
 }
 
-export const UnderlineHeader: FC<UnderlineHeaderProps> = ({ text, level, fontColorClass = 'text-dark' }) => {
+export const UnderlineHeader: FC<UnderlineHeaderProps> = ({
+  text,
+  level,
+  fontColorClass = 'text-dark',
+  svgClass,
+}) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
 
   return (
@@ -16,10 +23,19 @@ export const UnderlineHeader: FC<UnderlineHeaderProps> = ({ text, level, fontCol
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500 150"
         preserveAspectRatio="none"
-        className="absolute top-1/2 -translate-y-1/2 mt-2"
+        className={cn('absolute bottom-1/2 translate-y-1/2', svgClass)}
       >
         <title>Orange swooping underline</title>
-        <path d="M8.1,146.2c0,0,240.6-55.6,479-13.8" />
+        <path
+          d="M8.1,146.2c0,0,240.6-55.6,479-13.8"
+          fill="none"
+          stroke="#0047ab"
+          strokeWidth="8"
+          strokeDasharray="500"
+          strokeDashoffset="500"
+        >
+          <animate attributeName="stroke-dashoffset" from="500" to="0" dur="1s" fill="freeze" />
+        </path>
       </svg>
     </div>
   );
