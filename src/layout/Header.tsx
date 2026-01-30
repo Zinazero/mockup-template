@@ -20,7 +20,7 @@ export const Header = () => {
     <header
       className={cn(
         'sticky top-0 z-50 w-full shadow-lg h-24',
-        'bg-light dark:bg-deep-dark text-dark dark:text-light',
+        'bg-dark dark:bg-deep-dark text-dark dark:text-light',
         'dark:bg-deep-dark dark:text-light dark:border-b dark:border-brand',
       )}
     >
@@ -28,11 +28,11 @@ export const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
             <Image
-              src={`logo${logoData.fileExtension}`}
+              src={`/logo${logoData.fileExtension}`}
               alt="Logo"
               width={logoData.width}
               height={logoData.height}
-              className="cursor-pointer w-8 md:w-11 lg:w-15"
+              className="cursor-pointer w-24 md:w-33 lg:w-45 "
               draggable={false}
             />
           <span className="font-bold hidden lg:block">{brandData.name}</span>
@@ -41,12 +41,12 @@ export const Header = () => {
         {/* Navigation */}
         <nav
           className={cn(
-            'hidden absolute left-1/2 -translate-x-1/2 xl:flex space-x-20 text-xl xl:text-2xl font-medium',
+            'hidden absolute left-1/2 -translate-x-1/2 lg:flex lg:gap-10 xl:gap-16 text-xl xl:text-2xl font-medium',
           )}
         >
           {navLinks.map((link) => (
             <NavLink key={link.text} href={link.href}>
-              <span className="hover:text-brand">{link.text}</span>
+              <span className="text-light hover:text-brand">{link.text}</span>
             </NavLink>
           ))}
         </nav>
@@ -55,8 +55,8 @@ export const Header = () => {
         <button
           type="button"
           className={cn(
-            'mt-4 rounded-lg p-4 bg-brand text-light font-semibold w-60 text-center',
-            'hover:bg-brand-hover transition text-xl',
+            'mt-4 rounded-lg p-4 bg-brand text-light font-semibold w-40 lg:w-50 xl:w-60 text-center',
+            'hover:bg-brand-hover transition text-xl flex my-auto justify-center',
           )}
         >
           {ctaData.text}
