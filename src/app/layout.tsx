@@ -5,6 +5,7 @@ import { Footer } from '../layout/Footer';
 import { Header } from '../layout/Header';
 import { SetTheme } from './scripts/setTheme';
 import { ThemeToggle } from '../components/ThemeToggle';
+import { cn } from '../utils/cn';
 
 const sans = Inter({
   subsets: ['latin'],
@@ -33,9 +34,11 @@ export default function RootLayout({
       <head>
         <SetTheme />
       </head>
-      <body className={`${sans.variable} ${serif.variable} antialiased`}>
+      <body className={`${sans.variable} ${serif.variable} antialiased bg-light dark:bg-deep-dark`}>
         <Header />
-        {children}
+        <main className={cn('min-h-screen  flex flex-col items-center', 'bg-white dark:bg-deep-dark')}>
+          {children}
+        </main>
         <ThemeToggle className="fixed bottom-15 right-15 text-3xl" />
         <Footer />
       </body>

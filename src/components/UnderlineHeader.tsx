@@ -11,7 +11,7 @@ interface UnderlineHeaderProps {
 export const UnderlineHeader: FC<UnderlineHeaderProps> = ({
   text,
   level,
-  fontColorClass = 'text-dark',
+  fontColorClass = '',
   svgClass,
 }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;

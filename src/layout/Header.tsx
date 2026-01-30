@@ -55,8 +55,8 @@ export const Header = () => {
         <button
           type="button"
           className={cn(
-            'mt-4 rounded-lg p-4 bg-brand text-light font-semibold w-40 lg:w-50 xl:w-60 text-center',
-            'hover:bg-brand-hover transition text-xl flex my-auto justify-center',
+            'rounded-lg p-4 bg-brand text-light font-semibold w-40 lg:w-50 xl:w-60 text-center',
+            'hover:bg-brand-hover transition text-xl',
           )}
         >
           {ctaData.text}

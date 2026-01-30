@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer
       className={cn(
-        'shadow-sm text-sm py-4 text-center',
+        'shadow-sm text-sm py-4 text-center fixed bottom-0 left-0 w-full',
         'bg-light dark:bg-deep-dark text-dark dark:text-light',
         'dark:bg-deep-dark dark:text-light dark:border-t dark:border-dark',
       )}
