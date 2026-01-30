@@ -1,3 +1,4 @@
+import { LockedInBanner } from '@/src/layout/LockedInBanner';
 import { cn } from '../../utils/cn';
 import { Hero } from './sections/Hero';
 import { Section1 } from './sections/Section1';
@@ -9,6 +10,8 @@ export default function Home() {
       <Hero />
 
       <Section1 />
+
+      <LockedInBanner />
 
       <Section2 />
     </main>

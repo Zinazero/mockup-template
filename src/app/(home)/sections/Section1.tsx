@@ -19,12 +19,12 @@ export const Section1 = () => {
 
   return (
     <section className="flex justify-center w-full dark:bg-dark">
-      <div className="flex flex-col items-center gap-10 h-200 w-full max-w-350 p-10 ">
+      <div className="flex flex-col items-center gap-10  w-full max-w-350 p-10 ">
         <h2>
           <UnderlineHeader text="LOCATIONS" level={2} fontColorClass="dark:text-light" svgClass="mb-4" />
         </h2>
 
-        <div className="flex items-center justify-evenly h-2/3 w-full">
+        <div className="flex items-center justify-evenly h-120 w-full">
           {locations.map((loc) => (
             <Link
               href={loc.href}

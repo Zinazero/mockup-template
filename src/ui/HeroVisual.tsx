@@ -59,8 +59,8 @@ export const HeroVisual = ({ src, poster, title, subtitle, cta }: HeroVisualProp
             type="button"
             onClick={() => router.push(cta.href)}
             className={cn(
-              'mt-4 rounded-lg p-2 bg-brand-light text-light font-semibold w-60 text-center',
-              'hover:bg-brand-orange transition',
+              'mt-4 rounded-lg p-2 bg-brand-hover text-light font-semibold w-60 text-center',
+              'hover:bg-brand active:scale-95 transition',
             )}
           >
             {cta.text}
