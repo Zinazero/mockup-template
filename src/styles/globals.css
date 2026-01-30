@@ -3,14 +3,14 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-	--color-brand: #ed303f;
-	--color-brand-hover: #ef4755;
-	--color-brand-light: #f37680;
-	--color-brand-dark: #c0111f;
-	--color-brand-secondary: #ffffff;
+	--color-brand: #0047ab;
+	--color-brand-hover: #1274ff;
+	--color-brand-light: #1964bd;
+	--color-brand-dark: #060761;
+	--color-brand-secondary: #4592ff;
 	--color-light: #f8f9fa;
-	--color-dark: rgb(0, 0, 0);
-	--color-deep-dark: rgb(0, 0, 0);
+	--color-dark: #282c31;
+	--color-deep-dark: #000712;
 
 	--font-sans: 'Inter', sans-serif;
 	--font-serif: 'Source Serif 4', serif;
@@ -28,7 +28,7 @@ img {
 
 body {
 	@apply transition-colors;
-	@apply font-sans;
+	@apply font-sans dark:text-light;
 }
 
 button {
@@ -37,4 +37,19 @@ button {
 
 p {
 	@apply font-serif;
+}
+
+
+input,
+textarea,
+select {
+	@apply bg-white rounded-lg border p-2 focus:outline-0 border-gray-300/70;
+	@apply focus:border-brand shadow-sm transition;
+	@apply placeholder-gray-400;
+	caret-color: var(--color-brand);
+}
+
+input,
+textarea {
+	@apply focus:scale-105;
 }
