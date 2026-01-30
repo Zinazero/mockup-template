@@ -15,12 +15,12 @@ export const LockedInBanner = () => {
   ];
 
   return (
-    <div className="flex items-center w-full bg-deep-dark h-24  shadow-xl">
+    <div className="flex items-center justify-center w-full bg-deep-dark h-24  shadow-xl">
       <div className="w-full max-w-350 flex items-center justify-evenly">
         {/* LOCKED IN */}
         {sections.map(({ text, src, alt, width, height }) => (
           <div key={text} className="flex items-center gap-4">
-            <Image src={src} alt={alt} width={width} height={height} className="" />
+            <Image src={src} alt={alt} width={width} height={height} />
 
             <span className="font-bold text-light">{text}</span>
           </div>
