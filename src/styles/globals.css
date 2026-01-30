@@ -3,14 +3,14 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-	--color-brand: #0047ab;
-	--color-brand-hover: #1274ff;
-	--color-brand-light: #1964bd;
-	--color-brand-dark: #060761;
-	--color-brand-secondary: #4592ff;
+	--color-brand: #ed303f;
+	--color-brand-hover: #ef4755;
+	--color-brand-light: #f37680;
+	--color-brand-dark: #c0111f;
+	--color-brand-secondary: #ffffff;
 	--color-light: #f8f9fa;
-	--color-dark: #282c31;
-	--color-deep-dark: #000712;
+	--color-dark: rgb(0, 0, 0);
+	--color-deep-dark: rgb(0, 0, 0);
 
 	--font-sans: 'Inter', sans-serif;
 	--font-serif: 'Source Serif 4', serif;
@@ -23,6 +23,7 @@ html {
 
 img {
 	user-select: none;
+	overflow-clip-margin: unset;
 }
 
 body {
@@ -33,7 +34,6 @@ body {
 button {
 	@apply cursor-pointer;
 }
-
 
 p {
 	@apply font-serif;
