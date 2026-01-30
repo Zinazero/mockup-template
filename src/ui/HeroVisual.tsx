@@ -53,7 +53,7 @@ export const HeroVisual = ({ src, poster, title, subtitle, cta }: HeroVisualProp
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 text-white">
         <h1 className="text-5xl font-bold text-brand-secondary">{title}</h1>
-        {subtitle && <h2 className="mt-2 text-2xl text-light">{subtitle}</h2>}
+        {subtitle && <span className="mt-2 text-2xl text-brand">{subtitle}</span>}
         {cta && (
           <button
             type="button"
