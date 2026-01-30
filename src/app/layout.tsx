@@ -4,6 +4,7 @@ import { Inter, Source_Serif_4 } from 'next/font/google';
 import { Footer } from '../layout/Footer';
 import { Header } from '../layout/Header';
 import { SetTheme } from './scripts/setTheme';
+import { ThemeToggle } from '../components/ThemeToggle';
 
 const sans = Inter({
   subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`${sans.variable} ${serif.variable} antialiased`}>
         <Header />
         {children}
+        <ThemeToggle className="fixed bottom-15 right-15 text-3xl" />
         <Footer />
       </body>
     </html>
