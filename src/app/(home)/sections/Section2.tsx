@@ -30,15 +30,21 @@ export const Section2 = () => {
   return (
     <section className="flex justify-center w-full dark:bg-dark">
       <div className="flex flex-col items-center h-200 w-full max-w-350 p-10 ">
-        <h3 className="font-bold text-5xl text-brand">GO MOBILE</h3>
+        <h3 className="relative w-200 h-26">
+          <Image 
+            src='/mobile/go-mobile.svg'
+            alt='Go Mobile'
+            fill
+          />
+        </h3>
 
         <div className="flex items-center justify-evenly h-120 w-full">
-          {mobileRooms.map(({ text, src, alt, width, height, href }) => (
+          {mobileRooms.map(({ text, src, alt, href }) => (
             <Link
               key={text}
               href={href}
               className={cn(
-                'relative w-90 h-90 rounded-lg overflow-hidden',
+                'relative w-90 h-90 rounded-2xl overflow-hidden',
                 'hover:brightness-110 hover:scale-102 active:scale-95 transition group',
               )}
             >
