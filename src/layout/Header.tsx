@@ -6,6 +6,7 @@ import navData from '../data/nav.json';
 import { cn } from '../utils/cn';
 import ScrollPaddingSetter from './ScrollPaddingSetter';
 import ctaData from '../data/cta.json';
+import logoData from '../data/logo.json';
 
 type NavLinkType = {
   text: string;
@@ -26,9 +27,14 @@ export const Header = () => {
       <div id="header-div" className="px-4 flex items-center justify-between w-full h-full relative">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <figure className="relative h-8 md:h-11 lg:h-15 w-8 md:w-11 lg:w-15">
-            <Image src="logo.svg" alt="Logo" fill className="cursor-pointer" draggable={false} />
-          </figure>
+            <Image
+              src={`logo${logoData.fileExtension}`}
+              alt="Logo"
+              width={logoData.width}
+              height={logoData.height}
+              className="cursor-pointer w-8 md:w-11 lg:w-15"
+              draggable={false}
+            />
           <span className="font-bold hidden lg:block">{brandData.name}</span>
         </Link>
 
@@ -50,7 +56,7 @@ export const Header = () => {
           type="button"
           className={cn(
             'mt-4 rounded-lg p-4 bg-brand text-light font-semibold w-60 text-center',
-            'hover:bg-brand-orange transition text-xl',
+            'hover:bg-brand-hover transition text-xl',
           )}
         >
           {ctaData.text}
