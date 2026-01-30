@@ -29,8 +29,8 @@ export const UnderlineHeader: FC<UnderlineHeaderProps> = ({
         <path
           d="M8.1,146.2c0,0,240.6-55.6,479-13.8"
           fill="none"
-          stroke="#0047ab"
-          strokeWidth="8"
+          stroke="#ed303f"
+          strokeWidth="14"
           strokeDasharray="500"
           strokeDashoffset="500"
         >

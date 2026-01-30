@@ -1,3 +1,4 @@
+import { UnderlineHeader } from '@/src/components/UnderlineHeader';
 import { cn } from '@/src/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,7 +19,9 @@ export const Section1 = () => {
 
   return (
     <section className="flex flex-col items-center gap-16 h-200 w-full max-w-350 p-10">
-      <h1 className="font-bold text-6xl dark:text-light">LOCATIONS</h1>
+      <h1>
+        <UnderlineHeader text="LOCATIONS" level={1} svgClass="mb-4" />
+      </h1>
 
       <div className="flex items-center justify-evenly h-2/3 w-full">
         {locations.map((loc) => (
@@ -27,7 +30,7 @@ export const Section1 = () => {
             key={loc.location}
             className={cn(
               'relative w-1/4 h-full rounded-t-full overflow-hidden',
-              'hover:brightness-125 active:scale-95 transition group',
+              'hover:brightness-110 hover:scale-102 active:scale-95 transition group',
             )}
           >
             <Image
