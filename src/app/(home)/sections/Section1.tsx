@@ -18,39 +18,41 @@ export const Section1 = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center gap-16 h-200 w-full max-w-350 p-10">
-      <h1>
-        <UnderlineHeader text="LOCATIONS" level={1} svgClass="mb-4" />
-      </h1>
+    <section className="flex justify-center w-full dark:bg-dark">
+      <div className="flex flex-col items-center gap-10 h-200 w-full max-w-350 p-10 ">
+        <h2>
+          <UnderlineHeader text="LOCATIONS" level={2} fontColorClass="dark:text-light" svgClass="mb-4" />
+        </h2>
 
-      <div className="flex items-center justify-evenly h-2/3 w-full">
-        {locations.map((loc) => (
-          <Link
-            href={loc.href}
-            key={loc.location}
-            className={cn(
-              'relative w-1/4 h-full rounded-t-full overflow-hidden',
-              'hover:brightness-110 hover:scale-102 active:scale-95 transition group',
-            )}
-          >
-            <Image
-              src={loc.imgSrc}
-              alt={`${loc.location} Storefront`}
-              className="absolute top-0 left-0 w-full h-full object-cover"
-              fill
-            />
-
-            <div
+        <div className="flex items-center justify-evenly h-2/3 w-full">
+          {locations.map((loc) => (
+            <Link
+              href={loc.href}
+              key={loc.location}
               className={cn(
-                'flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 bottom-1/20',
-                'bg-light h-1/8 w-4/5 p-4 font-bold rounded-xl group-hover:text-brand',
+                'relative w-1/4 h-full rounded-t-full overflow-hidden border-brand border-2',
+                'hover:brightness-110 hover:scale-102 active:scale-95 transition group',
               )}
             >
-              {loc.subLocation && <span className="text-sm">{loc.subLocation}</span>}
-              <span className="text-xl">{loc.location}</span>
-            </div>
-          </Link>
-        ))}
+              <Image
+                src={loc.imgSrc}
+                alt={`${loc.location} Storefront`}
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                fill
+              />
+
+              <div
+                className={cn(
+                  'flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 bottom-1/20',
+                  'bg-light h-1/8 w-4/5 p-4 font-bold rounded-xl group-hover:text-brand',
+                )}
+              >
+                {loc.subLocation && <span className="text-sm">{loc.subLocation}</span>}
+                <span className="text-xl">{loc.location}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );
