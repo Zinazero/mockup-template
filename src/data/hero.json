@@ -1,8 +1,8 @@
 {
-	"title": "We've got an escape room for you!",
-	"subtitle": "Locked in. Time is precious. Will you breakout?",
-	"cta": {
-		"text": "Book Now",
-		"href": "/contact"
-	}
+  "title": "We've got an escape room for you!",
+  "subtitle": "Locked in. Time is precious. Will you breakout?",
+  "cta": {
+    "text": "Book Now",
+    "href": "/contact"
+  }
 }

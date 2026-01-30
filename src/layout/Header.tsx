@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { NavLink } from '../components/NavLink';
 import brandData from '../data/brand.json';
+import ctaData from '../data/cta.json';
+import logoData from '../data/logo.json';
 import navData from '../data/nav.json';
 import { cn } from '../utils/cn';
 import ScrollPaddingSetter from './ScrollPaddingSetter';
-import ctaData from '../data/cta.json';
-import logoData from '../data/logo.json';
 
 type NavLinkType = {
   text: string;
@@ -27,14 +27,14 @@ export const Header = () => {
       <div id="header-div" className="px-4 flex items-center justify-between w-full h-full relative">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-            <Image
-              src={`/logo${logoData.fileExtension}`}
-              alt="Logo"
-              width={logoData.width}
-              height={logoData.height}
-              className="cursor-pointer w-24 md:w-33 lg:w-45 "
-              draggable={false}
-            />
+          <Image
+            src={`/logo${logoData.fileExtension}`}
+            alt="Logo"
+            width={logoData.width}
+            height={logoData.height}
+            className="cursor-pointer w-24 md:w-33 lg:w-45 "
+            draggable={false}
+          />
           <span className="font-bold hidden lg:block">{brandData.name}</span>
         </Link>
 

@@ -28,7 +28,7 @@ img {
 
 body {
 	@apply transition-colors;
-	@apply font-sans;
+	@apply font-sans dark:text-light;
 }
 
 button {
@@ -37,4 +37,18 @@ button {
 
 p {
 	@apply font-serif;
+}
+
+input,
+textarea,
+select {
+	@apply bg-white rounded-lg border p-2 focus:outline-0 border-gray-300/70;
+	@apply focus:border-brand shadow-sm transition;
+	@apply placeholder-gray-400;
+	caret-color: var(--color-brand);
+}
+
+input,
+textarea {
+	@apply focus:scale-105;
 }

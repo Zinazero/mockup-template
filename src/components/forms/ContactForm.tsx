@@ -1,10 +1,10 @@
 'use client';
 
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { SubmitEventHandler, useState } from 'react';
 import { Input } from '../Input';
 import { Textarea } from '../Textarea';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import {SubmitEventHandler, useState } from 'react';
 
 export const ContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -38,7 +38,11 @@ export const ContactForm = () => {
       <input type="text" name="website" autoComplete="off" tabIndex={-1} style={{ display: 'none' }} />
 
       {/* Submit */}
-      <button type="submit" className="w-full bg-brand text-light p-2 rounded-lg active:scale-95 hover:bg-brand-hover" disabled={loading}>
+      <button
+        type="submit"
+        className="w-full bg-brand text-light p-2 rounded-lg active:scale-95 hover:bg-brand-hover"
+        disabled={loading}
+      >
         {loading ? <FontAwesomeIcon icon={faSpinner} spin size="2x" /> : 'Send Message'}
       </button>
     </form>

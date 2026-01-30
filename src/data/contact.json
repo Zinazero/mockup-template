@@ -1,8 +1,22 @@
 [
-	{
-		"header": "Placeholder Place",
-		"phoneNumber": "(123) 456-7890",
-		"address": "123 Placeholder Blvd.",
-		"email": "place@holder.com"
-	}
+  {
+    "header": "NIAGARA FALLS",
+    "phoneNumber": "(905) 651-7597",
+    "address": "4605 Queen Street, Niagara Falls",
+    "email": "niagara@breakoutescapes.ca"
+  },
+  {
+    "header": "CAMBRIDGE",
+    "subHeader": "GALT",
+    "phoneNumber": "(519) 623-5625",
+    "address": "114 Main Street, Cambridge",
+    "email": "breakoutescapes@gmail.com"
+  },
+  {
+    "subHeader": "PRESTON",
+    "phoneNumber": "(519) 222-0189",
+    "address": "1453 King St E, Cambridge",
+    "notes": "(Inside Lumberjacks Axe Throwing)",
+    "email": "info@lumberjacksaxethrowing.com"
+  }
 ]

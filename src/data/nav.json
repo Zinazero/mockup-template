@@ -1,7 +1,7 @@
 [
-	{ "text": "Locations", "href": "/locations" },
-	{ "text": "Rules", "href": "/rules" },
-	{ "text": "Testimonials", "href": "/testimonials" },
-	{ "text": "Contact", "href": "/contact" },
-	{ "text": "Gallery", "href": "gallery" }
+  { "text": "Locations", "href": "/locations" },
+  { "text": "Rules", "href": "/rules" },
+  { "text": "Testimonials", "href": "/testimonials" },
+  { "text": "Gallery", "href": "gallery" },
+  { "text": "Contact", "href": "/contact" }
 ]

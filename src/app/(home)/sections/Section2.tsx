@@ -1,7 +1,7 @@
-import { ImageType } from '@/src/types';
-import { cn } from '@/src/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ImageType } from '@/src/types';
+import { cn } from '@/src/utils/cn';
 
 interface MobileImage extends ImageType {
   href: string;
@@ -28,14 +28,10 @@ export const Section2 = () => {
   ];
 
   return (
-    <section className="flex justify-center w-full dark:bg-dark">
+    <section className="flex justify-center w-full">
       <div className="flex flex-col items-center h-200 w-full max-w-350 p-10 ">
         <h3 className="relative w-200 h-26">
-          <Image 
-            src='/mobile/go-mobile.svg'
-            alt='Go Mobile'
-            fill
-          />
+          <Image src="/mobile/go-mobile.svg" alt="Go Mobile" fill />
         </h3>
 
         <div className="flex items-center justify-evenly h-120 w-full">

@@ -1,5 +1,5 @@
-import { getHeroSrc } from '@/src/lib/heroSrc';
 import heroData from '@/src/data/hero.json';
+import { getHeroSrc } from '@/src/lib/heroSrc';
 import { HeroVisual } from '@/src/ui/HeroVisual';
 
 export const Hero = () => {
