@@ -1,15 +1,8 @@
 import Image from 'next/image';
-
-type BannerSection = {
-  text: string;
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-};
+import { ImageType } from '../types';
 
 export const LockedInBanner = () => {
-  const sections: BannerSection[] = [
+  const sections: ImageType[] = [
     { text: 'LOCKED IN', src: '/icons/lock.png', alt: 'Padlock', width: 46, height: 52 },
     { text: 'TIME IS PRECIOUS', src: '/icons/clock.png', alt: 'Clock', width: 52, height: 52 },
     {
