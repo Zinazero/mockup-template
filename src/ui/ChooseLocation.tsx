@@ -1,34 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '../utils/cn';
-
-type Location = {
-  location: string;
-  subLocation?: string;
-  imgSrc: string;
-  href: string;
-};
+import locationData from '@/src/data/location.json';
+import { Location } from '../types';
 
 export const ChooseLocation = () => {
-  const locations: Location[] = [
-    {
-      location: 'GALT',
-      subLocation: 'CAMBRIDGE',
-      imgSrc: '/locations/galt.png',
-      href: '/galt',
-    },
-    {
-      location: 'NIAGARA FALLS',
-      imgSrc: '/locations/niagara.png',
-      href: '/niagara',
-    },
-    {
-      location: 'PRESTON',
-      subLocation: 'CAMBRIDGE',
-      imgSrc: '/locations/preston.png',
-      href: '/preston',
-    },
-  ];
+  const locations: Location[] = locationData;
 
   return (
     <div className="flex items-center justify-evenly h-full w-full">
