@@ -3,9 +3,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-	--color-brand: #ed303f;
-	--color-brand-hover: #ef4755;
-	--color-brand-light: #f37680;
+	--color-brand: #a26a1f;
+	--color-brand-hover: #c48026;
+	--color-brand-light: #edcca0;
 	--color-brand-dark: #c0111f;
 	--color-brand-secondary: #ffffff;
 	--color-light: #f8f9fa;

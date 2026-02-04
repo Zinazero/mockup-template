@@ -28,7 +28,7 @@ export const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src={`/logo${logoData.fileExtension}`}
+            src={`/logo-dark${logoData.fileExtension}`}
             alt="Logo"
             width={logoData.width}
             height={logoData.height}

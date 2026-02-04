@@ -1,19 +1,7 @@
 [
 	{
-		"location": "GALT",
-		"subLocation": "CAMBRIDGE",
+		"location": "GALT GAMES",
 		"imgSrc": "/locations/galt.png",
 		"href": "/galt"
-	},
-	{
-		"location": "NIAGARA FALLS",
-		"imgSrc": "/locations/niagara.png",
-		"href": "/niagara-falls"
-	},
-	{
-		"location": "PRESTON",
-		"subLocation": "CAMBRIDGE",
-		"imgSrc": "/locations/preston.png",
-		"href": "/preston"
 	}
 ]

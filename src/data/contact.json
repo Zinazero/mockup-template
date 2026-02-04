@@ -1,22 +1,13 @@
 [
-  {
-    "header": "NIAGARA FALLS",
-    "phoneNumber": "(905) 651-7597",
-    "address": "4605 Queen Street, Niagara Falls",
-    "email": "niagara@breakoutescapes.ca"
-  },
-  {
-    "header": "CAMBRIDGE",
-    "subHeader": "GALT",
-    "phoneNumber": "(519) 623-5625",
-    "address": "114 Main Street, Cambridge",
-    "email": "breakoutescapes@gmail.com"
-  },
-  {
-    "subHeader": "PRESTON",
-    "phoneNumber": "(519) 222-0189",
-    "address": "1453 King St E, Cambridge",
-    "notes": "(Inside Lumberjacks Axe Throwing)",
-    "email": "info@lumberjacksaxethrowing.com"
-  }
+	{
+		"header": "FIVE NINETEEN ESCAPES",
+		"phoneNumber": "(519) 802-9330",
+		"address": "Brantford, Ontario",
+		"email": "rick.theroomescape@gmail.com"
+	},
+	{
+		"header": "GALT GAMES",
+		"phoneNumber": "(519) 623-5625",
+		"address": "114 Main Street, Cambridge"
+	}
 ]
