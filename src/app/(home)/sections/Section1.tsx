@@ -1,10 +1,10 @@
-import { UnderlineHeader } from "@/src/components/UnderlineHeader";
+import { HeaderBox } from '@/src/ui/HeaderBox';
 
 export const Section1 = () => {
   return (
     <section className="p-10">
       <h1>
-        <UnderlineHeader text="SECTION 1" level={1} />
+        <HeaderBox header="SECTION 1" subtitle='EST. 2015' facebookLink='/' instagramLink='/' />
       </h1>
     </section>
   );
