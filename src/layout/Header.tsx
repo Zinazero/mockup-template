@@ -20,8 +20,8 @@ export const Header = () => {
     <header
       className={cn(
         'sticky top-0 z-50 w-full shadow-lg h-24',
-        'bg-dark dark:bg-deep-dark text-dark dark:text-light',
-        'dark:bg-deep-dark dark:text-light dark:border-b dark:border-brand',
+        'bg-dark text-dark',
+        'dark:bg-dark dark:text-light dark:border-b dark:border-brand',
       )}
     >
       <div id="header-div" className="px-4 flex items-center justify-between w-full h-full relative">
@@ -52,15 +52,15 @@ export const Header = () => {
         </nav>
 
         {/* Call to action */}
-        <button
-          type="button"
+        <Link
+          href="/booking"
           className={cn(
             'rounded-lg p-4 bg-brand text-light font-semibold w-40 lg:w-50 xl:w-60 text-center',
             'hover:bg-brand-hover transition text-xl',
           )}
         >
           {ctaData.text}
-        </button>
+        </Link>
       </div>
       <ScrollPaddingSetter />
     </header>

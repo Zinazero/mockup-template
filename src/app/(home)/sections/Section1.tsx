@@ -1,4 +1,5 @@
-import { HeaderBox } from '@/src/ui/HeaderBox';
+import { HeaderBox } from '@/src/components/HeaderBox';
+import { GaltHeader } from '@/src/ui/GaltHeader';
 import { faSmile, IconDefinition } from '@fortawesome/free-regular-svg-icons';
 import { faBoltLightning, faGlobe, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,7 +41,7 @@ export const Section1 = () => {
   return (
     <section id="locations" className="flex justify-center w-full">
       <div className="flex flex-col items-center gap-20 w-full max-w-350 p-10">
-        <HeaderBox header="GALT GAMES" subtitle="EST. 2015" facebookLink="/" instagramLink="/" />
+        <GaltHeader />
 
         <div className="flex w-full pl-42 pb-20">
           <div className="grid grid-cols-2 gap-14">
