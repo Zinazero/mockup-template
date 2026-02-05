@@ -1,6 +1,5 @@
 import { ContactForm } from '@/src/components/forms/ContactForm';
 import { UnderlineHeader } from '@/src/components/UnderlineHeader';
-import { ChooseLocation } from '@/src/ui/ChooseLocation';
 import { ContactInfo } from './components/ContactInfo';
 
 const Contact = () => {

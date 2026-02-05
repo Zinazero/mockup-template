@@ -27,7 +27,7 @@ export const LinkBox = ({ text, subText, href, src, alt, className }: LinkBoxPro
       <div
         className={cn(
           'flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 bottom-1/20',
-          'bg-light h-1/6 w-4/5 p-4 font-bold rounded-xl text-dark',
+          'bg-light/90 h-1/6 w-4/5 p-4 font-bold rounded-xl text-dark',
         )}
       >
         {subText && <span className="text-sm">{subText}</span>}
