@@ -20,4 +20,4 @@ export type ContactInfo = {
   address: string;
   email: string;
   notes?: string;
-}
+};

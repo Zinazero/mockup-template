@@ -10,7 +10,6 @@ const Contact = () => {
       </h1>
       <section className="flex flex-col items-center gap-10 w-full p-4 text-xl text-brand">
         Want to book an appointment? Choose your location.
-
       </section>
       <div className="w-full flex items-center justify-evenly mt-10">
         <section>

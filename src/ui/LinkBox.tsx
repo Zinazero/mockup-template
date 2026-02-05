@@ -19,7 +19,7 @@ export const LinkBox = ({ text, subText, href, src, alt, className }: LinkBoxPro
       className={cn(
         'relative w-90 h-90 rounded-2xl overflow-hidden',
         'hover:brightness-110 hover:scale-102 active:scale-95 transition group',
-        className
+        className,
       )}
     >
       <Image src={src} alt={alt} className="absolute top-0 left-0 w-full h-full object-cover" fill />

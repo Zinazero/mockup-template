@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { cn } from '@/src/utils/cn';
 import { LinkBox } from '@/src/ui/LinkBox';
+import { cn } from '@/src/utils/cn';
 
 export const Section2 = () => {
   const mobileRooms = [

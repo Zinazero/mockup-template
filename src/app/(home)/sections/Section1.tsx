@@ -1,8 +1,7 @@
-import { HeaderBox } from '@/src/components/HeaderBox';
-import { GaltHeader } from '@/src/ui/GaltHeader';
 import { faSmile, IconDefinition } from '@fortawesome/free-regular-svg-icons';
 import { faBoltLightning, faGlobe, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { GaltHeader } from '@/src/ui/GaltHeader';
 
 type Info = {
   icon: IconDefinition;

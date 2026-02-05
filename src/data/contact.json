@@ -1,15 +1,15 @@
 [
-	{
-		"header": "FIVE NINETEEN ESCAPES",
+  {
+    "header": "FIVE NINETEEN ESCAPES",
     "subHeader": "",
-		"phoneNumber": "(519) 802-9330",
-		"address": "Brantford, Ontario",
-		"email": "rick.theroomescape@gmail.com",
+    "phoneNumber": "(519) 802-9330",
+    "address": "Brantford, Ontario",
+    "email": "rick.theroomescape@gmail.com",
     "notes": ""
-	},
-	{
-		"header": "GALT GAMES",
-		"phoneNumber": "(519) 623-5625",
-		"address": "114 Main Street, Cambridge"
-	}
+  },
+  {
+    "header": "GALT GAMES",
+    "phoneNumber": "(519) 623-5625",
+    "address": "114 Main Street, Cambridge"
+  }
 ]

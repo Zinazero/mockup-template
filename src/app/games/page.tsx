@@ -1,5 +1,5 @@
-import { Hours } from "@/src/layout/Hours";
-import { GamesHero } from "./sections/GamesHero";
+import { Hours } from '@/src/layout/Hours';
+import { GamesHero } from './sections/GamesHero';
 
 const Games = () => {
   return (
@@ -7,7 +7,7 @@ const Games = () => {
       <GamesHero />
       <Hours />
     </>
-  )
+  );
 };
 
 export default Games;
