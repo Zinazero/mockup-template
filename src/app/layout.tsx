@@ -34,7 +34,7 @@ export default function RootLayout({
       <head>
         <SetTheme />
       </head>
-      <body className={`${sans.variable} ${serif.variable} antialiased bg-light dark:bg-deep-dark`}>
+      <body className={`${sans.variable} ${serif.variable} antialiased`}>
         <Header />
         <main className={cn('min-h-screen flex flex-col items-center', 'bg-white dark:bg-dark')}>
           {children}
