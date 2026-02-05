@@ -5,7 +5,7 @@ import { ThemeToggle } from '../components/ThemeToggle';
 import { Footer } from '../layout/Footer';
 import { Header } from '../layout/Header';
 import { cn } from '../utils/cn';
-import { SetTheme } from './scripts/setTheme';
+import { SetTheme } from '../scripts/setTheme';
 
 const sans = Inter({
   subsets: ['latin'],

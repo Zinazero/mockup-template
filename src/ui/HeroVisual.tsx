@@ -15,9 +15,10 @@ type HeroVisualProps = {
   title: string;
   subtitle?: string;
   cta?: CallToAction;
+  overlayActive?: boolean;
 };
 
-export const HeroVisual = ({ src, poster, title, subtitle, cta }: HeroVisualProps) => {
+export const HeroVisual = ({ src, poster, title, subtitle, cta, overlayActive = true }: HeroVisualProps) => {
   const ext = src.split('.').pop()?.toLowerCase();
   const type = ext === 'mp4' || ext === 'webm' ? 'video' : 'image';
 
@@ -48,7 +49,7 @@ export const HeroVisual = ({ src, poster, title, subtitle, cta }: HeroVisualProp
       )}
 
       {/* Dark overlay for contrast */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/70" />
+      {overlayActive && <div className="absolute top-0 left-0 w-full h-full bg-black/70" />}
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 text-white">

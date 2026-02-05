@@ -2,32 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { LinkBox } from '@/src/ui/LinkBox';
 import { cn } from '@/src/utils/cn';
+import mobileData from '@/src/data/mobile.json';
 
 export const Section2 = () => {
-  const mobileRooms = [
-    {
-      text: 'The Room',
-      src: '/mobile/trailer.jpg',
-      alt: 'Escape Room Trailer',
-      href: '/mobile',
-    },
-    {
-      text: 'The Hot Seat',
-      src: '/mobile/hot-seat.jpg',
-      alt: 'Solo Escape Room',
-      href: '/mobile',
-    },
-  ];
-
   return (
-    <section className="flex justify-center w-full">
-      <div className="flex flex-col items-center h-200 w-full max-w-350 p-10 ">
+    <section className="flex justify-center w-full p-10 pb-20">
+      <div className="flex flex-col items-center w-full max-w-350 gap-10">
         <h3 className="relative w-200 h-26">
           <Image src="/mobile/go-mobile.svg" alt="Go Mobile" fill />
         </h3>
 
-        <div className="flex items-center justify-evenly h-120 w-full">
-          {mobileRooms.map((obj) => (
+        <div className="flex items-center justify-evenly flex-wrap gap-4 w-full">
+          {mobileData.map((obj) => (
             <LinkBox key={obj.text} {...obj} />
           ))}
         </div>
