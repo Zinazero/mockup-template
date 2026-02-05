@@ -25,7 +25,7 @@ export const UnderlineHeader: FC<UnderlineHeaderProps> = ({
         preserveAspectRatio="none"
         className={cn('absolute bottom-1/2 translate-y-1/2', svgClass)}
       >
-        <title>Orange swooping underline</title>
+        <title>Swooping underline</title>
         <path
           d="M8.1,146.2c0,0,240.6-55.6,479-13.8"
           fill="none"
