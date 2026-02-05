@@ -1,3 +1,4 @@
+import { Testimonial } from '@/src/components/Testimonial';
 import { UnderlineHeader } from '@/src/components/UnderlineHeader';
 import testimonialData from '@/src/data/testimonials.json';
 
@@ -9,7 +10,7 @@ const Testimonials = () => {
       </h1>
 
       {testimonialData.map((testimonial) => (
-        <Testimonials key={testimonial.name} {...testimonial} />
+        <Testimonial key={testimonial.name} {...testimonial} />
       ))}
     </div>
   );

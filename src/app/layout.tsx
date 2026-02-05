@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body className={`${sans.variable} ${serif.variable} antialiased`}>
         <Header />
-        <main className={cn('min-h-screen flex flex-col items-center', 'bg-white dark:bg-dark')}>
+        <main className={cn('min-h-screen flex flex-col items-center', 'bg-light dark:bg-dark pb-20')}>
           {children}
         </main>
         <ThemeToggle className="fixed bottom-15 right-15 text-3xl" />

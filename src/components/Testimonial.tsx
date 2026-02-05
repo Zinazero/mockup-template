@@ -1,3 +1,6 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 type TestimonialProps = {
   name: string;
   title?: string;
@@ -11,8 +14,16 @@ export const Testimonial = ({ name, title, date, paragraph }: TestimonialProps) 
       <div className="flex flex-col">
         <span className="font-bold text-xl">{name}</span>
         {title && <span>{title}</span>}
-        <span>{date}</span>
+        <span className="text-gray-500">{date}</span>
       </div>
+
+      <div>
+        <span className="mr-2">5.0</span>
+        {[0, 1, 2, 3, 4].map((num) => (
+          <FontAwesomeIcon key={num} icon={faStar} className="text-yellow-300" />
+        ))}
+      </div>
+
       <p>{paragraph}</p>
     </div>
   );
