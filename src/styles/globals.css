@@ -52,3 +52,23 @@ input,
 textarea {
 	@apply focus:scale-105;
 }
+
+.answer {
+	display: grid;
+	grid-template-rows: 0fr;
+	opacity: 0;
+	pointer-events: none;
+	transition:
+		grid-template-rows 200ms ease,
+		opacity 200ms ease;
+}
+
+.answer.open {
+	grid-template-rows: 1fr;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.answer .inner {
+	overflow: hidden;
+}
