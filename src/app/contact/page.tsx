@@ -4,14 +4,11 @@ import { ContactInfo } from './components/ContactInfo';
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center w-full max-w-350 min-h-screen p-10">
+    <div className="flex flex-col items-center w-full max-w-350 min-h-screen p-10 gap-20">
       <h1 className="text-5xl font-bold">
         <UnderlineHeader text="Contact Us" level={1} svgClass="mb-4" />
       </h1>
-      <section className="flex flex-col items-center gap-10 w-full p-4 text-xl text-brand">
-        Want to book an appointment? Choose your location.
-      </section>
-      <div className="w-full flex items-center justify-evenly mt-10">
+      <div className="w-full flex items-center justify-evenly">
         <section>
           <ContactInfo />
         </section>
