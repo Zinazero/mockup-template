@@ -1,6 +1,6 @@
 [
-  { "text": "Products", "href": "/products" },
-  { "text": "Services", "href": "/services" },
-  { "text": "Testimonials", "href": "/testimonials" },
-  { "text": "Contact", "href": "/contact" }
+	{ "text": "Products", "href": "/products" },
+	{ "text": "Testimonials", "href": "/testimonials" },
+	{ "text": "Contact", "href": "/contact" },
+	{ "text": "FAQ", "href": "/faq" }
 ]
