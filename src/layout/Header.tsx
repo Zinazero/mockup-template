@@ -20,19 +20,19 @@ export const Header = () => {
     <header
       className={cn(
         'sticky top-0 z-50 w-full shadow-lg h-24',
-        'bg-dark text-dark',
+        'bg-deep-dark text-dark',
         'dark:bg-dark dark:text-light dark:border-b dark:border-brand',
       )}
     >
       <div id="header-div" className="px-4 flex items-center justify-between w-full h-full relative">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center ml-4">
           <Image
-            src={`/logo-dark${logoData.fileExtension}`}
+            src={`/logo${logoData.fileExtension}`}
             alt="Logo"
             width={logoData.width}
             height={logoData.height}
-            className="cursor-pointer w-24 md:w-33 lg:w-45 "
+            className="cursor-pointer w-18"
             draggable={false}
           />
           <span className="font-bold hidden lg:block">{brandData.name}</span>

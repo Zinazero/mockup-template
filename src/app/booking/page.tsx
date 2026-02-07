@@ -1,4 +1,4 @@
-import BookeoInterface from '@/src/bookeo-interface/src';
+import BookeoInterface from '@/src/bookeo-interface';
 import env from '../config/env';
 
 const Booking = () => {

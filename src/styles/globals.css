@@ -42,9 +42,10 @@ p {
 input,
 textarea,
 select {
-	@apply bg-white rounded-lg border p-2 focus:outline-0 border-gray-300/70;
+	@apply bg-light text-dark rounded-lg border p-2 focus:outline-0 border-gray-300/70;
 	@apply focus:border-brand shadow-sm transition;
 	@apply placeholder-gray-400 text-dark;
+	@apply dark:bg-dark dark:text-light;
 	caret-color: var(--color-brand);
 }
 
@@ -70,5 +71,25 @@ textarea {
 }
 
 .answer .inner {
+	overflow: hidden;
+}
+
+.description {
+	display: grid;
+	grid-template-rows: 0fr;
+	opacity: 0;
+	pointer-events: none;
+	transition:
+		grid-template-rows 200ms ease,
+		opacity 200ms ease
+}
+
+.description.open {
+	grid-template-rows: 1fr;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.description .inner {
 	overflow: hidden;
 }

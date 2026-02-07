@@ -6,11 +6,11 @@ export const Packages = () => {
   return (
     <div className="bg-dark w-full flex flex-col items-center p-10 gap-10">
       <Image
-        src={`/logo-dark${logoData.fileExtension}`}
+        src={`/logo${logoData.fileExtension}`}
         alt="Logo"
         width={logoData.width}
         height={logoData.height}
-        className="cursor-pointer w-24 md:w-33 lg:w-45 "
+        className="cursor-pointer w-40"
         draggable={false}
       />
 
