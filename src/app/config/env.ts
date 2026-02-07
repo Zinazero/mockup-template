@@ -3,7 +3,7 @@ type Env = {
 };
 
 const env: Env = {
-  SERVER_BASE: process.env.SERVER_BASE || '',
+  SERVER_BASE: process.env.NEXT_PUBLIC_SERVER_BASE || '',
 };
 
 for (const [key, value] of Object.entries(env)) {
