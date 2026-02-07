@@ -19,7 +19,7 @@ export const Booking = ({ product, timeWindow, setChosenSlot }: BookingProps) =>
   const { productId, name, description, images, duration, bookingLimits, defaultRates } = product;
 
   const [loading, setLoading] = useState(false);
-  const [numberOfParticipants, setNumberOfParticipants] = useState<number>(bookingLimits[0].min);
+  const [numberOfParticipants, _setNumberOfParticipants] = useState<number>(bookingLimits[0].min);
   const [slots, setSlots] = useState<MatchingSlot[]>([]);
 
   useEffect(() => {
