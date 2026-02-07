@@ -21,7 +21,7 @@ export const FAQItem = ({ question, answer, isLast = false }: FAQItemProps) => {
         onClick={() => setOpen(!open)}
         className={cn(
           'w-full p-4 flex justify-between bg-white shadow-sm group-hover:text-brand-hover transition',
-          'dark:bg-dark',
+          'dark:bg-deep-dark',
           open && 'text-brand-hover'
         )}
       >

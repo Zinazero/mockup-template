@@ -8,7 +8,7 @@ export const MobileGallery = () => {
   return (
     <div className="flex flex-col items-center gap-20 p-10">
       <h2>
-        <UnderlineHeader text="Mobile Escape Rooms" level={2} svgClass="mb-4" />
+        <UnderlineHeader text="Mobile Escape Rooms" level={2} svgClass="mb-6" />
       </h2>
 
       <div className="w-full max-w-350 flex flex-col gap-20">

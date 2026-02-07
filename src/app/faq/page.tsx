@@ -9,7 +9,7 @@ const FAQ = () => {
         <UnderlineHeader text="Frequently Asked Questions" level={1} svgClass="mb-8" />
       </h1>
 
-      <div className="rounded-xl shadow-lg overflow-hidden w-full dark:border-2">
+      <div className="rounded-xl shadow-lg overflow-hidden w-full dark:border-b dark:border-brand">
         {faqData.map(({ question, answer }, i) => {
           const isLast = i === faqData.length - 1;
           return <FAQItem key={question} question={question} answer={answer} isLast={isLast} />;
