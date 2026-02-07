@@ -1,8 +1,8 @@
 import { Hours } from '@/src/layout/Hours';
-import { GamesHero } from './sections/GamesHero';
-import { GamesGallery } from './sections/GamesGallery';
-import { Packages } from './sections/Packages';
 import { LockedInBanner } from '@/src/layout/LockedInBanner';
+import { GamesGallery } from './sections/GamesGallery';
+import { GamesHero } from './sections/GamesHero';
+import { Packages } from './sections/Packages';
 
 const Games = () => {
   return (

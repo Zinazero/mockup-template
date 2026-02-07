@@ -1,8 +1,8 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { UnderlineHeader } from '@/src/components/UnderlineHeader';
 import mobileData from '@/src/data/mobile.json';
 import { cn } from '@/src/utils/cn';
-import Image from 'next/image';
-import Link from 'next/link';
 
 export const MobileGallery = () => {
   return (

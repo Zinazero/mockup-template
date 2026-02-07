@@ -1,5 +1,5 @@
-import { MobileGallery } from "./sections/MobileGallery";
-import { MobileHero } from "./sections/MobileHero";
+import { MobileGallery } from './sections/MobileGallery';
+import { MobileHero } from './sections/MobileHero';
 
 const Mobile = () => {
   return (

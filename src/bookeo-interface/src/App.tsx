@@ -1,12 +1,12 @@
+import { formatISO, parse } from 'date-fns';
+import { AnimatePresence } from 'framer-motion';
 import { useMemo, useState } from 'react';
 import { Checkout } from './features/checkout/Checkout';
 import { Games } from './features/games/Games';
+import { ApiProvider } from './lib/ApiContext';
 import type { MatchingSlot } from './types/api/availability';
 import type { Product } from './types/api/products';
-import { formatISO, parse } from 'date-fns';
 import { PageTransition } from './ui/PageTransition';
-import { AnimatePresence } from 'framer-motion';
-import { ApiProvider } from './lib/ApiContext';
 
 type BookeoInterfaceProps = {
   serverBase: string;

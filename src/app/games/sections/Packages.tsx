@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import logoData from '@/src/data/logo.json';
 import Link from 'next/link';
+import logoData from '@/src/data/logo.json';
 
 export const Packages = () => {
   return (

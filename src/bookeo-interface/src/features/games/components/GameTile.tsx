@@ -2,13 +2,12 @@ import { faCaretDown, faCaretUp, faSpinner } from '@fortawesome/free-solid-svg-i
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DOMPurify from 'dompurify';
 import { type Dispatch, type SetStateAction, useEffect, useState } from 'react';
-import { getSlotsCacheKey, SLOTS_TTL, slotsCache, slotsCacheExpires } from '../../booking/BookingCache';
+import { useApi } from '../../../lib/ApiContext';
+import { searchAvailability } from '../../../lib/searchAvailability';
 import type { Product } from '../../../types/api/products';
 import type { TimeWindow } from '../../../types/app';
-import { searchAvailability } from '../../../lib/searchAvailability';
 import { cn } from '../../../utils/cn';
-import { useApi } from '../../../lib/ApiContext';
-
+import { getSlotsCacheKey, SLOTS_TTL, slotsCache, slotsCacheExpires } from '../../booking/BookingCache';
 
 type GameTileProps = {
   product: Product;

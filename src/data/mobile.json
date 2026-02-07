@@ -1,44 +1,44 @@
 [
-	{
-		"text": "Cruise Ship Crisis",
-		"src": "/mobile/cruise.jpg",
-		"alt": "Escape Room",
-		"href": "/mobile",
-		"description": "Team escape experience for up to 60 people. We can come to you. Practice emotional intelligence skills. Strengthen communication, awareness & connection on your team."
-	},
-	{
-		"text": "The Room",
-		"src": "/mobile/trailer.jpg",
-		"alt": "Escape Room Trailer",
-		"href": "/mobile",
-		"description": "The Room is a five minute horror themed escape room in a trailer. Groups of up to five people (minimum 2) enter the trailer. One person is placed in a 'cage', everyone has 5 minutes to solve 2 puzzles to save the person in the cage and escape the trailer. Yes, the person in the cage gets to do things too."
-	},
-	{
-		"text": "The Hot Seat",
-		"src": "/mobile/hot-seat.jpg",
-		"alt": "Solo Escape Room",
-		"href": "/mobile",
-		"description": "The Hot Seat is a high-intensity, 2-minute solo escape room designed for maximum pressure and quick thinking. The player must hold down a button for the entire game—if they let go, it's all over. While anchored in place, they must solve two rapid-fire puzzles using logic, observation, and focus. The Hot Seat delivers adrenaline-pumping fun in a compact, repeatable format that’s ideal for crowd engagement and entertainment. How long can you take the heat?"
-	},
-	{
-		"text": "The Clown's Dressing Room",
-		"src": "/mobile/clown.jpg",
-		"alt": "Escape Room Tent",
-		"href": "/mobile",
-		"description": "The Clown's Dressing Room is a five minute escape room located in a 10' x 20' tent. The show starts in five minutes and our clown has gone missing. You will need to figure out where the clown went and replace him before the show starts."
-	},
-	{
-		"text": "The Witch's Hut",
-		"src": "/mobile/witch-hut.jpg",
-		"alt": "Escape Room Tent",
-		"href": "/mobile",
-		"description": "The Witch's Hut is a five minute escape room located inside a 10'x20' tent. The witch has stolen a priceless family heirloom from you. You and and your group of up to 7 people must enter her hut, find the heirloom and escape before she comes back."
-	},
-	{
-		"text": "The Escape Rig",
-		"src": "/mobile/escape-rig.jpg",
-		"alt": "Escape Room Rig",
-		"href": "/mobile",
+  {
+    "text": "Cruise Ship Crisis",
+    "src": "/mobile/cruise.jpg",
+    "alt": "Escape Room",
+    "href": "/mobile",
+    "description": "Team escape experience for up to 60 people. We can come to you. Practice emotional intelligence skills. Strengthen communication, awareness & connection on your team."
+  },
+  {
+    "text": "The Room",
+    "src": "/mobile/trailer.jpg",
+    "alt": "Escape Room Trailer",
+    "href": "/mobile",
+    "description": "The Room is a five minute horror themed escape room in a trailer. Groups of up to five people (minimum 2) enter the trailer. One person is placed in a 'cage', everyone has 5 minutes to solve 2 puzzles to save the person in the cage and escape the trailer. Yes, the person in the cage gets to do things too."
+  },
+  {
+    "text": "The Hot Seat",
+    "src": "/mobile/hot-seat.jpg",
+    "alt": "Solo Escape Room",
+    "href": "/mobile",
+    "description": "The Hot Seat is a high-intensity, 2-minute solo escape room designed for maximum pressure and quick thinking. The player must hold down a button for the entire game—if they let go, it's all over. While anchored in place, they must solve two rapid-fire puzzles using logic, observation, and focus. The Hot Seat delivers adrenaline-pumping fun in a compact, repeatable format that’s ideal for crowd engagement and entertainment. How long can you take the heat?"
+  },
+  {
+    "text": "The Clown's Dressing Room",
+    "src": "/mobile/clown.jpg",
+    "alt": "Escape Room Tent",
+    "href": "/mobile",
+    "description": "The Clown's Dressing Room is a five minute escape room located in a 10' x 20' tent. The show starts in five minutes and our clown has gone missing. You will need to figure out where the clown went and replace him before the show starts."
+  },
+  {
+    "text": "The Witch's Hut",
+    "src": "/mobile/witch-hut.jpg",
+    "alt": "Escape Room Tent",
+    "href": "/mobile",
+    "description": "The Witch's Hut is a five minute escape room located inside a 10'x20' tent. The witch has stolen a priceless family heirloom from you. You and and your group of up to 7 people must enter her hut, find the heirloom and escape before she comes back."
+  },
+  {
+    "text": "The Escape Rig",
+    "src": "/mobile/escape-rig.jpg",
+    "alt": "Escape Room Rig",
+    "href": "/mobile",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-	}
+  }
 ]

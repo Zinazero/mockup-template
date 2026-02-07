@@ -1,9 +1,9 @@
 'use client';
 
-import { cn } from '@/src/utils/cn';
 import { faCaretDown, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { cn } from '@/src/utils/cn';
 
 type FAQItemProps = {
   question: string;
@@ -22,7 +22,7 @@ export const FAQItem = ({ question, answer, isLast = false }: FAQItemProps) => {
         className={cn(
           'w-full p-4 flex justify-between bg-white shadow-sm group-hover:text-brand-hover transition',
           'dark:bg-deep-dark',
-          open && 'text-brand-hover'
+          open && 'text-brand-hover',
         )}
       >
         <span>{question}</span>

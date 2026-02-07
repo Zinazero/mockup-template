@@ -1,8 +1,8 @@
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Dispatch, SetStateAction } from 'react';
 import type { MatchingSlot } from '../../../types/api/availability';
 import { formatSlotTime } from '../../../utils/formatSlotTime';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 type SlotsProps = {
   slots: MatchingSlot[];

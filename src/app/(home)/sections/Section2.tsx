@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import mobileData from '@/src/data/mobile.json';
 import { LinkBox } from '@/src/ui/LinkBox';
 import { cn } from '@/src/utils/cn';
-import mobileData from '@/src/data/mobile.json';
 
 export const Section2 = () => {
   return (

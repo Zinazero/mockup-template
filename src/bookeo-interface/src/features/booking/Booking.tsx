@@ -1,12 +1,12 @@
 import DOMPurify from 'dompurify';
 import { type Dispatch, type SetStateAction, useEffect, useState } from 'react';
+import { useApi } from '../../lib/ApiContext';
 import { searchAvailability } from '../../lib/searchAvailability';
 import type { MatchingSlot } from '../../types/api/availability';
 import type { Product } from '../../types/api/products';
 import type { TimeWindow } from '../../types/app';
-import { Slots } from './components/Slots';
 import { getSlotsCacheKey, SLOTS_TTL, slotsCache, slotsCacheExpires } from './BookingCache';
-import { useApi } from '../../lib/ApiContext';
+import { Slots } from './components/Slots';
 
 type BookingProps = {
   product: Product;

@@ -1,16 +1,16 @@
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { format } from 'date-fns';
+import { AnimatePresence, motion } from 'framer-motion';
 import { type Dispatch, type SetStateAction, useEffect, useState } from 'react';
-import { GameTile } from './components/GameTile';
+import { useApi } from '../../lib/ApiContext';
 import type { MatchingSlot } from '../../types/api/availability';
 import type { Product } from '../../types/api/products';
 import type { TimeWindow } from '../../types/app';
-import { Booking } from '../booking/Booking';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-import { getProductsCacheKey, PRODUCTS_TTL, productsCache, productsCacheExpires } from './GamesCache';
 import { PageTransition } from '../../ui/PageTransition';
-import { AnimatePresence, motion } from 'framer-motion';
-import { useApi } from '../../lib/ApiContext';
+import { Booking } from '../booking/Booking';
+import { GameTile } from './components/GameTile';
+import { getProductsCacheKey, PRODUCTS_TTL, productsCache, productsCacheExpires } from './GamesCache';
 
 type GamesProps = {
   date: string;

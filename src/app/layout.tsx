@@ -4,8 +4,8 @@ import { Inter, Source_Serif_4 } from 'next/font/google';
 import { ThemeToggle } from '../components/ThemeToggle';
 import { Footer } from '../layout/Footer';
 import { Header } from '../layout/Header';
-import { cn } from '../utils/cn';
 import { SetTheme } from '../scripts/setTheme';
+import { cn } from '../utils/cn';
 
 const sans = Inter({
   subsets: ['latin'],

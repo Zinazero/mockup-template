@@ -1,32 +1,32 @@
 [
-	{
-		"src": "/games/hockey.png",
-		"width": 421,
-		"height": 679,
-		"alt": "Hockey Nights in Canada"
-	},
-	{
-		"src": "/games/falco.png",
-		"width": 415,
-		"height": 680,
-		"alt": "Dr. Falco's Office"
-	},
-	{
-		"src": "/games/flossed.png",
-		"width": 415,
-		"height": 690,
-		"alt": "Flossed In"
-	},
-	{
-		"src": "/games/grandpas.png",
-		"width": 421,
-		"height": 690,
-		"alt": "Grandpa's Study"
-	},
-	{
-		"src": "/games/whodunnit.png",
-		"width": 421,
-		"height": 690,
-		"alt": "Whodunnit"
-	}
+  {
+    "src": "/games/hockey.png",
+    "width": 421,
+    "height": 679,
+    "alt": "Hockey Nights in Canada"
+  },
+  {
+    "src": "/games/falco.png",
+    "width": 415,
+    "height": 680,
+    "alt": "Dr. Falco's Office"
+  },
+  {
+    "src": "/games/flossed.png",
+    "width": 415,
+    "height": 690,
+    "alt": "Flossed In"
+  },
+  {
+    "src": "/games/grandpas.png",
+    "width": 421,
+    "height": 690,
+    "alt": "Grandpa's Study"
+  },
+  {
+    "src": "/games/whodunnit.png",
+    "width": 421,
+    "height": 690,
+    "alt": "Whodunnit"
+  }
 ]

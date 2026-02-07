@@ -1,5 +1,5 @@
-import React, { createContext, useContext } from 'react';
 import axios, { type AxiosInstance } from 'axios';
+import React, { createContext, useContext } from 'react';
 
 interface ApiContextValue {
   serverBase: string;

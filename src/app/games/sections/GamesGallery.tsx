@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import { UnderlineHeader } from '@/src/components/UnderlineHeader';
 import gamesData from '@/src/data/games.json';
-import Image from 'next/image';
 
 export const GamesGallery = () => {
   return (
